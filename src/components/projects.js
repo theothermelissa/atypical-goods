@@ -20,7 +20,7 @@ const projects = {
     {
       date: 20190331,
       markdown: 
-  `My son kept taking off his seatbelt. I found some buckle covers from Amazon, but didn't want to wait for shipping, and I wasn't _sure_ they would work (... first world problems, right?). So I made one to test.`,
+  `My son keeps taking off his seatbelt. I found some buckle covers from Amazon, but didn't want to wait for shipping, and I wasn't _sure_ they would work (... first world problems, right?). So I made one to test.`,
     }
   ],
   BackseatBarrier: [ 

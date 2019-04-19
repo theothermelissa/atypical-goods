@@ -23,7 +23,7 @@ const PostDate = (props) => {
   console.log("Props passed to PostDate: ", props);
   return (
     // <Moment>{props.date}</Moment>
-    <div className="date">{props.date}</div>
+    <div className="date">--{props.date}</div>
   )
 };
 
@@ -43,13 +43,13 @@ const Post = (props) => {
 
 const Project = ({projectName, projectTitle}) => {
   return (
-    <div className="project">
+    <div className="item project">
       <div className="title">
         <h2>{projectTitle}</h2>
       </div>
-      {projectName.map((post) => (
-        <Post className="post" {...post} />
-    ))}
+        {projectName.map((post) => (
+          <Post className="post" {...post} />
+      ))}
     </div>
   )
 };
@@ -57,10 +57,14 @@ const Project = ({projectName, projectTitle}) => {
 class BodyContent extends Component {
   render() {
     return (
-      <div className="grid">
-        <Project projectTitle="Test" projectName={projects.Test} />
-        <Project projectTitle="Buckle Cover" projectName={projects.BuckleCover} />
-        <Project projectTitle="Backseat Barrier" projectName={projects.BackseatBarrier} />
+      <div className="outergrid">
+        <div className="smallProjects">
+          <Project projectTitle="Test" projectName={projects.Test} />
+          <Project projectTitle="Buckle Cover" projectName={projects.BuckleCover} />
+        </div>
+        <div className="largeProjects">
+          <Project projectTitle="Backseat Barrier" projectName={projects.BackseatBarrier} />
+        </div>
       </div>
     );
   }

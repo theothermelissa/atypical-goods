@@ -4,7 +4,7 @@ body {
   font-family: "Tahoma", Geneva, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: whitesmoke;
+  background-color: gainsboro;
 }
 
 code {
@@ -12,45 +12,65 @@ code {
     monospace;
 }
 
-.grid {
+.outergrid {
   display: flex;
-  flex-flow: column wrap;
-  height: 120vh;
-  width: 90vw;
-  max-width: 800px;
-  align-items: center;
-  margin: 1vw;
+  flex-direction: row wrap;
+  justify-content: center;
+  justify-self: center;
+  margin: 10px;
+  /* width: 100vw; */
+}
+
+.smallProjects {
+  display: flex;
+  flex-direction: column;
+  width: 33vw;
+  margin-right: 10px;
+}
+
+.largeProjects {
+  display: flex;
+  flex-direction: column;
+  width: 60vw;
+  max-width: 900px;
 }
 
 .project {
   display: flex;
   flex-direction: column;
-  background-color: white;
-  border-radius: 20px;
-  box-shadow: 5px 10px 10px gainsboro;
-  width: 43vw;
-  max-width: 500px;
-  margin: 1vw;
+  align-items: center;
+  background-color: whitesmoke;
+  /* border: 1px solid slategray; */
+  border-radius: 10px;
+  box-shadow: 5px 7px 7px lightgray;
+  /* width: 200px; */
+  /* max-width: 300px; */
+  height: fit-content;
+  margin: 10px;
+  padding-bottom: 20px;
 }
 
 .title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
+  /* width: 100%; */
   color: slategray;
-  border-bottom: 1px solid whitesmoke;
-  margin: 0px;
+  padding: 10px;
+  /* align-items: center; */
+  /* border-bottom: 1px solid slategray; */
+  /* margin: 10px; */
+  text-transform: uppercase;
+  font-size: .8em;
 }
 
 .post {
-  /* width: 100%; */
-  margin: 0px;
+  width: 100%;
+  background: white;
+  margin: 0px 0px 7px 0px;
+  /* margin: 0px; */
 }
 
 .text {
   padding: 15px;
-  background-color:white;
+  /* background-color:white; */
 }
 
 .date {
@@ -58,7 +78,7 @@ code {
   padding: 15px;
   font-weight: bold;
   font-size: .8em;
-  justify-content: center;
+  justify-content: flex-end;
   color: slategray;
   margin: 0px;
 

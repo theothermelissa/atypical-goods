@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "imagesloaded": "^4.1.4",
     "lodash": "^4.17.11",
     "marked": "^0.6.2",
     "masonry-layout": "^4.2.2",
